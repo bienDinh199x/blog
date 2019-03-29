@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hello Friend!</title>
-    <link>https://biendinh199x.github.io/myblogbee/tags/</link>
+    <link>https://biendinh199x.github.io/blog/tags/</link>
     <description>Recent content in Tags on Hello Friend!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
     <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://biendinh199x.github.io/myblogbee/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://biendinh199x.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chém Gió</title>
-      <link>https://biendinh199x.github.io/myblogbee/tags/ch%C3%A9m-gi%C3%B3/</link>
+      <link>https://biendinh199x.github.io/blog/tags/ch%C3%A9m-gi%C3%B3/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/tags/ch%C3%A9m-gi%C3%B3/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/ch%C3%A9m-gi%C3%B3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://biendinh199x.github.io/myblogbee/tags/development/</link>
+      <link>https://biendinh199x.github.io/blog/tags/development/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/tags/development/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://biendinh199x.github.io/myblogbee/tags/go/</link>
+      <link>https://biendinh199x.github.io/blog/tags/go/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/tags/go/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://biendinh199x.github.io/myblogbee/tags/golang/</link>
+      <link>https://biendinh199x.github.io/blog/tags/golang/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/tags/golang/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://biendinh199x.github.io/myblogbee/tags/hugo/</link>
+      <link>https://biendinh199x.github.io/blog/tags/hugo/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/tags/hugo/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Templates</title>
-      <link>https://biendinh199x.github.io/myblogbee/tags/templates/</link>
+      <link>https://biendinh199x.github.io/blog/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/tags/templates/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Themes</title>
-      <link>https://biendinh199x.github.io/myblogbee/tags/themes/</link>
+      <link>https://biendinh199x.github.io/blog/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/tags/themes/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/themes/</guid>
       <description></description>
     </item>
     

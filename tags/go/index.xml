@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Hello Friend!</title>
-    <link>https://biendinh199x.github.io/myblogbee/tags/go/</link>
+    <link>https://biendinh199x.github.io/blog/tags/go/</link>
     <description>Recent content in Go on Hello Friend!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
     <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://biendinh199x.github.io/myblogbee/tags/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://biendinh199x.github.io/blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating a New Theme.</title>
-      <link>https://biendinh199x.github.io/myblogbee/post/postpage1_creat/</link>
+      <link>https://biendinh199x.github.io/blog/post/postpage1_creat/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/post/postpage1_creat/</guid>
+      <guid>https://biendinh199x.github.io/blog/post/postpage1_creat/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://biendinh199x.github.io/myblogbee/posts/goisforlovers/</link>
+      <link>https://biendinh199x.github.io/blog/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/posts/goisforlovers/</guid>
+      <guid>https://biendinh199x.github.io/blog/posts/goisforlovers/</guid>
       <description>Hugo uses the excellent Go html/template library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
@@ -39,10 +39,10 @@ This document is a brief primer on using Go templates.</description>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://biendinh199x.github.io/myblogbee/posts/creatpage/</link>
+      <link>https://biendinh199x.github.io/blog/posts/creatpage/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/posts/creatpage/</guid>
+      <guid>https://biendinh199x.github.io/blog/posts/creatpage/</guid>
       <description>Step 1. Install Hugo Hugo utilise l&amp;rsquo;excellente librairie [go][] [html/template][gohtmltemplate] pour
 son moteur de modèles. c&amp;rsquo;est un moteur extrêmement léger qui offre un très petit
 nombre de fonctions logiques. À notre expérience, c&amp;rsquo;est juste ce qu&amp;rsquo;il faut pour
@@ -53,10 +53,10 @@ similitudes avec les modèles go.</description>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://biendinh199x.github.io/myblogbee/posts/hugoisforlovers/</link>
+      <link>https://biendinh199x.github.io/blog/posts/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/posts/hugoisforlovers/</guid>
+      <guid>https://biendinh199x.github.io/blog/posts/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Go to Hugo releases and download the
 appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.

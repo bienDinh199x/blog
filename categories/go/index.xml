@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Hello Friend!</title>
-    <link>https://biendinh199x.github.io/myblogbee/categories/go/</link>
+    <link>https://biendinh199x.github.io/blog/categories/go/</link>
     <description>Recent content in Go on Hello Friend!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://biendinh199x.github.io/myblogbee/categories/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://biendinh199x.github.io/blog/categories/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introduction aux modèles (Hu)go</title>
-      <link>https://biendinh199x.github.io/myblogbee/posts/introduction-aux-modeles-hugo/</link>
+      <link>https://biendinh199x.github.io/blog/posts/introduction-aux-modeles-hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/myblogbee/posts/introduction-aux-modeles-hugo/</guid>
+      <guid>https://biendinh199x.github.io/blog/posts/introduction-aux-modeles-hugo/</guid>
       <description>Hugo utilise l&amp;rsquo;excellente librairie go html/template pour
 son moteur de modèles. c&amp;rsquo;est un moteur extrêmement léger qui offre un très petit
 nombre de fonctions logiques. À notre expérience, c&amp;rsquo;est juste ce qu&amp;rsquo;il faut pour
