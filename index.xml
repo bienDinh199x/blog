@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello Friend!</title>
+    <link>https://biendinh199x.github.io/myblogbee/</link>
+    <description>Recent content on Hello Friend!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Create at BumbleBee🐝</copyright>
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://biendinh199x.github.io/myblogbee/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tại sao là blog này?</title>
+      <link>https://biendinh199x.github.io/myblogbee/post/postpage2_infome/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/post/postpage2_infome/</guid>
+      <description>Oke!! Go! go! go Chắc bạn đã nghe nói đến blog, phải không? 🤙 Nhưng nếu bạn hỏi vài người xung quanh cụ thể blog là gì, có thể bạn sẽ không nhận được câu trả lời hợp lý nào. Vậy hãy để tớ giải thích cho bạn blogger là gì, lý do vì sao mình chọn tạo ra blog này để chia sẻ với các bạn thay vì các mạng xã hội, và vì sao bạn nên tạo blog 💪, các loại blog khác nhau 📚, làm thế nào để bắt đầu ✍️, vân vân ☁️ ☁️ và 🌧️ 🌧️.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme.</title>
+      <link>https://biendinh199x.github.io/myblogbee/post/postpage1_creat/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/post/postpage1_creat/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there.
+With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://biendinh199x.github.io/myblogbee/about/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/about/</guid>
+      <description>Hi there ! Tên đầy đủ của tôi là Đinh Thanh Biên (tên giao dịch: Bee 🤞🏻).Tôi là một lập trình viên 🇯 🇦 🇻 🇦.
+Hê lô my phờ ren ✌️🏻 Chào mừng bạn đã đến với trang blog - Nhật kí điện tử của tôi. Đây là nơi tôi sẽ viết những gì tôi nghĩ là cần thiết để chia sẻ về nhưng thứ hay ho mà tôi học được và cuộc sống của mình cho các bạn!</description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>https://biendinh199x.github.io/myblogbee/showcase/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/showcase/</guid>
+      <description>Header 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/goisforlovers/</guid>
+      <description>Hugo uses the excellent Go html/template library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In our experience that it is just the right amount of
+logic to be able to create a good static website. If you have used other
+template systems from different languages or frameworks you will find a lot of
+similarities in Go templates.
+This document is a brief primer on using Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/creatpage/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/creatpage/</guid>
+      <description>Step 1. Install Hugo Hugo utilise l&amp;rsquo;excellente librairie [go][] [html/template][gohtmltemplate] pour
+son moteur de modèles. c&amp;rsquo;est un moteur extrêmement léger qui offre un très petit
+nombre de fonctions logiques. À notre expérience, c&amp;rsquo;est juste ce qu&amp;rsquo;il faut pour
+créer un bon site web statique. Si vous avez déjà utilisé d&amp;rsquo;autre moteurs de
+modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de
+similitudes avec les modèles go.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Go to Hugo releases and download the
+appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site
+you are reading right now.
+Follow the following steps:
+ Clone the Hugo repository</description>
+    </item>
+    
+    <item>
+      <title>Introduction aux modèles (Hu)go</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/introduction-aux-modeles-hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/introduction-aux-modeles-hugo/</guid>
+      <description>Hugo utilise l&amp;rsquo;excellente librairie go html/template pour
+son moteur de modèles. c&amp;rsquo;est un moteur extrêmement léger qui offre un très petit
+nombre de fonctions logiques. À notre expérience, c&amp;rsquo;est juste ce qu&amp;rsquo;il faut pour
+créer un bon site web statique. Si vous avez déjà utilisé d&amp;rsquo;autre moteurs de
+modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de
+similitudes avec les modèles go.
+Ce document est une introduction sur l&amp;rsquo;utilisation de Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Migrer vers Hugo depuis Jekyll</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/migrer-vers-hugo-depuis-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/migrer-vers-hugo-depuis-jekyll/</guid>
+      <description>&lt;h2 id=&#34;déplacez-le-contenu-statique-vers-static&#34;&gt;Déplacez le contenu statique vers &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Jekyll a une règle comme quoi tout répertoire qui ne commence pas par &lt;code&gt;_&lt;/code&gt; sera&lt;br /&gt;
+copié tel-quel dans le répertoire &lt;code&gt;_site&lt;/code&gt;. Hugo garde tout le contenu statique&lt;br /&gt;
+dans le répertoire &lt;code&gt;static&lt;/code&gt;. Vous devez donc déplacer tout ce type de contenu&lt;br /&gt;
+là-dedans. Avec Jekylll, l&amp;rsquo;arborescence ressemblant à ceci :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/
+    ▾ images/
+        logo.png
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello Friend ! I am Bee!</title>
+      <link>https://biendinh199x.github.io/myblogbee/post/hello/</link>
+      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/post/hello/</guid>
+      <description> &amp;laquo;Hello, friend?&amp;raquo; That&amp;rsquo;s Bee. 🙄
+Maybe I should give you a name&amp;hellip;
+But that&amp;rsquo;s a slippery slope.
+You&amp;rsquo;re only in my head.
+We have to remember that&amp;hellip;
+Shit.
+It&amp;rsquo;s actually happened.
+I&amp;rsquo;m talking to an imaginary person.
+— Mr. Robot S01E01  </description>
+    </item>
+    
+  </channel>
+</rss>

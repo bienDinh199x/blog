@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Hello Friend!</title>
+    <link>https://biendinh199x.github.io/myblogbee/tags/hugo/</link>
+    <description>Recent content in Hugo on Hello Friend!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Create at BumbleBee🐝</copyright>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://biendinh199x.github.io/myblogbee/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating a New Theme.</title>
+      <link>https://biendinh199x.github.io/myblogbee/post/postpage1_creat/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/post/postpage1_creat/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/creatpage/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/creatpage/</guid>
+      <description>Step 1. Install Hugo Hugo utilise l&amp;rsquo;excellente librairie [go][] [html/template][gohtmltemplate] pour
+son moteur de modèles. c&amp;rsquo;est un moteur extrêmement léger qui offre un très petit
+nombre de fonctions logiques. À notre expérience, c&amp;rsquo;est juste ce qu&amp;rsquo;il faut pour
+créer un bon site web statique. Si vous avez déjà utilisé d&amp;rsquo;autre moteurs de
+modèles pour différents langages ou frameworks, vous allez retrouver beaucoup de
+similitudes avec les modèles go.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://biendinh199x.github.io/myblogbee/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Go to Hugo releases and download the
+appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site
+you are reading right now.
+Follow the following steps:
+ Clone the Hugo repository</description>
+    </item>
+    
+  </channel>
+</rss>

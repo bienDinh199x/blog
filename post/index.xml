@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hello Friend!</title>
+    <link>https://biendinh199x.github.io/myblogbee/post/</link>
+    <description>Recent content in Posts on Hello Friend!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Create at BumbleBee🐝</copyright>
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://biendinh199x.github.io/myblogbee/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tại sao là blog này?</title>
+      <link>https://biendinh199x.github.io/myblogbee/post/postpage2_infome/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/post/postpage2_infome/</guid>
+      <description>Oke!! Go! go! go Chắc bạn đã nghe nói đến blog, phải không? 🤙 Nhưng nếu bạn hỏi vài người xung quanh cụ thể blog là gì, có thể bạn sẽ không nhận được câu trả lời hợp lý nào. Vậy hãy để tớ giải thích cho bạn blogger là gì, lý do vì sao mình chọn tạo ra blog này để chia sẻ với các bạn thay vì các mạng xã hội, và vì sao bạn nên tạo blog 💪, các loại blog khác nhau 📚, làm thế nào để bắt đầu ✍️, vân vân ☁️ ☁️ và 🌧️ 🌧️.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme.</title>
+      <link>https://biendinh199x.github.io/myblogbee/post/postpage1_creat/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/post/postpage1_creat/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Hello Friend ! I am Bee!</title>
+      <link>https://biendinh199x.github.io/myblogbee/post/hello/</link>
+      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/myblogbee/post/hello/</guid>
+      <description> &amp;laquo;Hello, friend?&amp;raquo; That&amp;rsquo;s Bee. 🙄
+Maybe I should give you a name&amp;hellip;
+But that&amp;rsquo;s a slippery slope.
+You&amp;rsquo;re only in my head.
+We have to remember that&amp;hellip;
+Shit.
+It&amp;rsquo;s actually happened.
+I&amp;rsquo;m talking to an imaginary person.
+— Mr. Robot S01E01  </description>
+    </item>
+    
+  </channel>
+</rss>
