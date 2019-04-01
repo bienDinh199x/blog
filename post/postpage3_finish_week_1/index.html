@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Look Back on Week - Microservice và phương thức Message bằng RabbitMq có gì hay? :: Hello Friend! — I am Bee!</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Trong sê ri Look Back on Week, kì này nói về một cấu trúc dịch vụ giúp phát triển phần mềm phức tạp - xây dựng ứng dụng theo dạng Microservice!
+Bài này sẽ là một cái nhìn lại, trong tuần vừa qua, tìm hiểu để sử dụng nó trong phát triển ứng dụng.
+Hi vọng bài này giúp giải thích một phần tại sao nên sử dụng kiến trúc Microservice và việc giao tiếp giữa các Microservice sử dụng gửi message dùng RabbitMq!"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/" />
+
+
+<link rel="stylesheet" href="https://biendinh199x.github.io/blog/assets/style.css">
+
+
+<link rel="stylesheet" href="https://biendinh199x.github.io/blog/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://biendinh199x.github.io/blog/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="https://biendinh199x.github.io/blog/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Look Back on Week - Microservice và phương thức Message bằng RabbitMq có gì hay? :: Hello Friend! — I am Bee!" />
+<meta name="twitter:description" content="Trong sê ri Look Back on Week, kì này nói về một cấu trúc dịch vụ giúp phát triển phần mềm phức tạp - xây dựng ứng dụng theo dạng Microservice!
+Bài này sẽ là một cái nhìn lại, trong tuần vừa qua, tìm hiểu để sử dụng nó trong phát triển ứng dụng.
+Hi vọng bài này giúp giải thích một phần tại sao nên sử dụng kiến trúc Microservice và việc giao tiếp giữa các Microservice sử dụng gửi message dùng RabbitMq!" />
+<meta name="twitter:site" content="https://biendinh199x.github.io/blog/" />
+<meta name="twitter:creator" content="map[name: Bee]" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Look Back on Week - Microservice và phương thức Message bằng RabbitMq có gì hay? :: Hello Friend! — I am Bee!">
+<meta property="og:description" content="Trong sê ri Look Back on Week, kì này nói về một cấu trúc dịch vụ giúp phát triển phần mềm phức tạp - xây dựng ứng dụng theo dạng Microservice!
+Bài này sẽ là một cái nhìn lại, trong tuần vừa qua, tìm hiểu để sử dụng nó trong phát triển ứng dụng.
+Hi vọng bài này giúp giải thích một phần tại sao nên sử dụng kiến trúc Microservice và việc giao tiếp giữa các Microservice sử dụng gửi message dùng RabbitMq!" />
+<meta property="og:url" content="https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/" />
+<meta property="og:site_name" content="Look Back on Week - Microservice và phương thức Message bằng RabbitMq có gì hay?" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2019-03-30 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+</head>
+<body class="">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="https://biendinh199x.github.io/blog/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">hello friend! i am bee!</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://biendinh199x.github.io/blog/about/">About</a></li>
+        
+      
+        
+          <li><a href="https://biendinh199x.github.io/blog/showcase/">Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://biendinh199x.github.io/blog/about/">About</a></li>
+      
+    
+      
+        <li><a href="https://biendinh199x.github.io/blog/showcase/">Showcase</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-137251679-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+ 
+</header>
+
+
+  <div class="content">
+    
+  <div class="post">
+    <h2 class="post-title"><a href="https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/">Look Back on Week - Microservice và phương thức Message bằng RabbitMq có gì hay?</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2019-03-30
+        </span>
+      
+      <span class="post-author">— Written by map[name: Bee]</span>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://biendinh199x.github.io/blog/tags/java">Java</a>&nbsp;
+        
+          #<a href="https://biendinh199x.github.io/blog/tags/message-in-microservice">message in microservice</a>&nbsp;
+        
+          #<a href="https://biendinh199x.github.io/blog/tags/rabbitmq">RabbitMq</a>&nbsp;
+        
+          #<a href="https://biendinh199x.github.io/blog/tags/development">development</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      
+
+<p>Trong sê ri <strong>Look Back on Week</strong>, kì này nói về một cấu trúc dịch vụ giúp phát triển phần mềm phức tạp - xây dựng ứng dụng theo dạng Microservice!<br />
+Bài này sẽ là một cái nhìn lại, trong tuần vừa qua, tìm hiểu để sử dụng nó trong phát triển ứng dụng.<br />
+Hi vọng bài này giúp giải thích một phần tại sao nên sử dụng kiến trúc Microservice và việc giao tiếp giữa các Microservice sử dụng gửi message dùng RabbitMq!</p>
+
+<h2 id="monolithic-applications-ứng-dụng-khối-truyền-thống">Monolithic Applications - ứng dụng khối truyền thống</h2>
+
+<p>Một ứng dụng truyền thống thường được thiết kế để đáp ứng nhiều chức năng theo yêu cầu của tổ chức hoặc khách hàng. Do đó các phần mềm đó có hàng trăm tính năng và tất cả những tính năng này đều được gói trong một ứng dụng monolithic - ERPs, CRMs, &hellip; Khi xảy ra lỗi hoặc theo yêu cầu cần scale (mở rộng - phát triển) ứng dụng này thì khối monolithic này sẽ là một cơn ác mộng cho mỗi dev. Việc bạn mất cả ngày để lục tung các dòng code, funtions là điều xảy ra như cơm bữa 😤</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*P77UokfGbaoskUmhlJ-gIw.png" alt="Alt text" />Hình 1: Monolithic Applications</p>
+
+<p>Trong phần lớn trường hợp, dịch vụ trong SOA là độc lập nhưng chúng lại được triển khải chung. Tương tự như ứng dụng monolithic, những dịch vụ này to và phức tạp lên theo thời gian vì thường xuyên thêm các tính năng. Và thế là những ứng dụng này lại trở thành một mớ các dịch vụ monolithic, cũng không còn khác mấy so với kiến trúc một khối thông thường. Hình 1 thể hiện một ứng dụng gồm nhiều services. Những services này được triển khai cùng một lúc vào 1 ứng dụng lớn. Dù bên trong có gồm các services thì đây là một ứng dụng monolithic. Một số tính chất của kiến trúc một khối:</p>
+
+<ul>
+<li>Được thiết kế, phát triển và triển khai theo một khối duy nhất<br /></li>
+<li>Ứng dụng monolithic phức tạp và to gây khó khăn cho việc bảo trì, nâng cấp và thêm tính năng mới<br /></li>
+<li>Khó áp dụng phát triển kiểu agile<br /></li>
+<li>Phải triển khai lại toàn bộ hệ thống dù chỉ cập nhật hay nâng cấp một phần<br /></li>
+<li>Mở rộng: phải mở rộng cả khối ứng dụng, gặp khó khăn nếu có các yêu cầu về tài nguyên khác nhau (ví dụ một service yêu cầu thêm CPU, service khác lại yêu cầu nhiều memory)<br /></li>
+<li>Độ tin cậy: một service không ổn định có thể sập cả hệ thống<br /></li>
+<li>Khó đổi mới: ứng dụng monolithic phải sử dụng chung công nghệ nên khó thay đổi hay áp dụng công nghệ mới<br />
+<br /></li>
+</ul>
+
+<p>Những tính chất giới hạn trên của kiến trúc một khối dẫn tới sự phát triển của kiến trúc dịch vụ nhỏ (Microservices Architecture).</p>
+
+<p>Mặc dù có cấu trúc module hóa hợp lý, nhưng ứng dụng kiểu này sẽ đóng gói và cài đặt thành một khối (monolithic). Mã chạy cụ thể tùy thuộc vào ngôn ngữ lập trình hay thư viện framework. Ví dụ ứng dụng Java đóng trong file WAR, triển khai trên application server như Tomcat hay Jetty. Dùng framework khác, thì ứng dụng Java là một file tự đóng gói để chạy là JAR. Ứng Rails hay Node.js đóng gói theo cấu trúc thư mục phân cấp.</p>
+
+<p>Ứng dụng được viết kiểu trên đây rất phổ biến. Chúng dễ viết, dễ thử nghiệm, dễ copy &amp; paste bởi các công cụ lập trình IDE và dự án mẫu được tối ưu để tạo ra ứng dụng khối đơn nhất. <em>Do cần thuyết phục lập trình viên đi theo công nghệ/framework nên nhà sản xuất phải làm sao lập trình chỉ cần New Project, ấn nút Build &amp; Run là ứng dụng chạy được ngay và luôn</em>. Có thể kiểm thử tự động giao diện web với Selenium. Ứng dụng khối đơn nhất khá dễ triển khai. PHP, Python thì chỉ cần cập nhật mã. Một số khác có chức năng khởi động nóng (hot reload: dịch lại nạp lên chạy tiếp) như Node.js, Play Framework, Revel. Để tăng khả năng chịu tải thì bổ xung thêm web application server giống nhau sau bộ cân bằng tải (load balancer). <em>Tất nhiên mở rộng cơ sở dữ liệu liên tục ghi thành nhiều bản không dễ dàng</em></p>
+
+<p><img src="https://media.giphy.com/media/l0HlHrHBDz5bgJw6k/giphy.gif" alt="Alt text" />Hình 2: Monolithic Applications <em>một cân tất cả</em> 🙈</p>
+
+<h2 id="microservices-architecture-đơn-giản-hóa-sự-phức-tạp">Microservices Architecture - đơn giản hóa sự phức tạp</h2>
+
+<p>Từ những nhược điểm trên thì Microservices Architecture sinh ra để khắc phục của Monolithic Applications!<br />
+Nhiều tập đoàn như Amazon, eBay, Netflix đã giải quyết vấn đề ứng dụng một khối bằng kiến trúc microservices (nhiều dịch vụ nhỏ).  Ý tưởng là chia nhỏ ứng dụng lớn ra thành các dịch vụ nhỏ kết nối với nhau.</p>
+
+<p><em>Microservices Architecture là tổng hợp các services nhỏ và chạy tách biệt, từ đó có thể phát triển và triển khai độc lập.</em></p>
+
+<p><img src="https://media.giphy.com/media/z8RV858nD71cY/giphy.gif" alt="Alt text" />Hình 3:Microservices Architecture làm việc nhịp nhàng 😂</p>
+
+<p>Mỗi dịch vụ nhỏ thực hiện một tập các chức năng chuyên biệt như quản lý đơn hàng, quản lý khách hàng. Mỗi dịch vụ là một ứng dụng nhỏ có kiến trúc đa diện lõi là business logic kết nối ra các adapter khác nhau. Một số dịch vụ nhỏ lộ ra giao tiếp lập trình API cho dịch vụ nhỏ khác hay ứng dụng client gọi tới. Khi vận hành, mỗi dịch vụ nhỏ được chạy trong một máy ảo (virtual machine) hoặc Docker container (ảo hóa tầng ứng dụng).</p>
+
+<p>Ví dụ, hãy tưởng tượng một cửa hàng trực tuyến với các dịch vụ siêu nhỏ riêng cho tài khoản người dùng, xử lý đơn đặt hàng và danh mục sản phẩm của danh mục sản phẩm:<br />
+Chắc chắn có một số bộ phận chuyển động mà bạn phải thiết lập và cấu hình để xây dựng một hệ thống như vậy. Làm thế nào để chúng hoạt động cùng nhau?<br />
+<img src="https://raw.githubusercontent.com/paulc4/microservices-demo/master/shopping-system.jpg" alt="Alt text" />Hình 4: Mô hình microservice của một webstore bàn hàng</p>
+
+<p>Ở đây, nhằm mục đích làm rõ cách thức mọi thứ hoạt động bằng cách xây dựng hệ thống đơn giản nhất có thể từng bước. Do đó, mình sẽ chỉ thực hiện một phần nhỏ của hệ thống lớn - dịch vụ tài khoản người dùng (User login).</p>
+
+<p>Các Web Application sẽ đưa ra yêu cầu đăng nhập cho dịch vụ microservice-login sử dụng một API RESTful.<br />
+<img src="https://raw.githubusercontent.com/paulc4/microservices-demo/master/mini-system.jpg" alt="Alt text" />Hình 5: UserLogin</p>
+
+<h2 id="sử-dụng-rabbitmq-trong-microservice">Sử dụng RabbitMQ trong microservice</h2>
+
+<p>Trong kiến trúc microservices, ứng dụng phần mềm được cấu thành từ các dịch vụ độc lập. Để hoàn thành một tác vụ của người dùng trên phần mềm, kết nối và giao tiếp giữa các microservices là cần thiết vì tác vụ gồm nhiều tác động khác nhau lên các services. Vì vậy, giao tiếp giữa các microservices là một vấn đề cực kì quan trọng.</p>
+
+<p>Khi áp dụng SOA, giao tiếp giữa các services được tiến hành bởi một Enterprise Service Bus (ESB) và phần lớn logic nằm trong tầng trung gian này (định tuyến cho tin nhắn, chuyền đổi và điều phối tin nhắn). Tuy nhiên, kiến trúc microservices thúc đẩy việc loại trừ một tầng giao tiếp trung gian tập trung/ ESB và chuyển phần logic (business logic) sang các services (dạng Smart Endpoints).</p>
+
+<p>Bởi vì microservices sử dụng giao thức tiêu chuẩn HTTP, JSON, &hellip;, yêu cầu để kết nối một giao thức khác biệt được tối giản. Một lựa chọn khác cho giao tiếp giữa microservices là sử dụng một message bus nhẹ hay gateway với khả năng định tuyến tối thiểu hoạt động như những đường truyền đơn thuần không xử lý business logic gì hết (dump pipe).</p>
+
+<p><strong>RabbitMQ</strong> là một trong những tùy chọn có sẵn miễn phí đơn giản nhất để triển khai hàng đợi nhắn tin trong kiến ​​trúc microservice của bạn. Các mẫu hàng đợi này có thể giúp mở rộng quy mô ứng dụng của bạn bằng cách giao tiếp giữa các dịch vụ siêu nhỏ khác nhau. Chúng tôi có thể sử dụng các hàng đợi này cho các mục đích khác nhau, như tương tác giữa các dịch vụ siêu nhỏ cốt lõi, tách rời các dịch vụ siêu nhỏ, thực hiện các cơ chế chuyển đổi dự phòng và gửi thông báo email qua các nhà môi giới tin nhắn.</p>
+
+<p>Bất cứ nơi nào hai hoặc nhiều mô-đun lõi cần giao tiếp với nhau, chúng ta không nên thực hiện các cuộc gọi HTTP trực tiếp, vì chúng có thể làm cho lớp lõi được liên kết chặt chẽ và sẽ khó quản lý khi có nhiều phiên bản của mỗi mô-đun lõi. Ngoài ra, bất cứ khi nào một dịch vụ ngừng hoạt động, mẫu cuộc gọi HTTP sẽ thất bại, vì sau khi khởi động lại, không có cách nào để theo dõi các cuộc gọi yêu cầu HTTP cũ. Điều này dẫn đến sự cần thiết của <strong>RabbitMQ</strong>.<br />
+<img src="http://images3.programmersought.com/637/45/450cae4efffbadf6c9bd256e59171905.png" alt="Alt text" />Hình 5: Cách thức hoạt động của <strong>RabbitMQ</strong></p>
+
+<p>Sử dụng RabbitMQ, bạn có thể tránh các cuộc gọi HTTP trực tiếp giữa các dịch vụ và loại bỏ sự kết hợp chặt chẽ giữa các dịch vụ siêu nhỏ cốt lõi. Điều này sẽ giúp bạn mở rộng quy mô microservice của bạn ở cấp độ cao hơn và thêm các cơ chế chuyển đổi dự phòng giữa các dịch vụ siêu nhỏ.</p>
+
+<h2 id="tóm-cái-váy-lại">Tóm cái váy lại!</h2>
+
+<p>Kiến trúc một khối sẽ hữu hiệu đối với ứng dụng đơn giản, ít chức năng. Nó bộc lộ nhiều nhược điểm khi ứng dụng phát triển lớn nhiều chức năng. Kiến trúc microservices chia nhỏ kiến trúc một khối ra các dịch vụ nhỏ. Microservices sẽ hiệu quả, phù hợp cho những ứng dụng phức tạp, liên tục phát triển nếu được thiết kế đúng và tận dụng các công nghệ quản lý, vận hành tự động.<br />
+Chúng ta đã trao đổi các đặc tính của kiến trúc Microservices và cách bạn có thể thực hiện chúng. Tuy nhiên, bạn nên lưu ý rằng Microservices toa thuốc chữa bách bệnh. Việc áp dụng mù quáng những khái niệm đang nổi sẽ không xử lý vấn đề thực tế của bạn. Nếu bạn đã đọc toàn bộ bài này thì bạn sẽ thấy Microservices có nhiều lợi ích và chúng ta nên tận dụng. Tuy nhiên, bạn cần hiểu rằng mong chờ microservices giải quyết tất cả các vấn đề là không thực tiễn! 🤔</p>
+
+<h4 id="oke-như-vậy-thì-ở-look-back-on-week-lần-này-chúng-ta-đã-cùng-nhau-bàn-luận-về-công-microservice">Oke! Như vậy thì ở Look Back on Week lần này chúng ta đã cùng nhau bàn luận về công Microservice!</h4>
+
+<h4 id="ngoài-ra-trong-tuần-vừa-qua-tớ-cũng-đã-được-trải-nghiệp-về-chụp-ảnh-và-chạy-media-camera-ở-event-người-vẫn-đang-phê-phê-vì-nó-cũng-khá-mệt-bên-cạnh-đó-thì-sắp-tới-tớ-sắp-bước-sang-một-trang-mới-của-cuộc-sống-những-cái-này-sẽ-được-tiết-lộ-vào-tuần-sau-trong-mục-nhật-kí-look-back-on-week-số-2-nha">Ngoài ra trong tuần vừa qua tớ cũng đã được trải nghiệp về chụp ảnh và chạy media camera ở event người vẫn đang phê phê vì nó cũng khá mệt! Bên cạnh đó thì sắp tới tớ sắp bước sang một trang mới của cuộc sống,những cái này sẽ được tiết lộ vào tuần sau trong mục nhật kí Look Back on Week số 2 nha.</h4>
+
+<h4 id="mọi-ý-kiến-đọc-góp-về-bài-viết-xin-gửi-cho-mình-qua-emai-biendt-ktqs-gmail-com-để-mình-nâng-cao-chất-lượng-các-bài-viết-nhé">Mọi ý kiến đọc góp về bài viết xin gửi cho mình qua emai - <em>biendt.ktqs@gmail.com</em> để mình nâng cao chất lượng các bài viết nhé!</h4>
+
+<h4 id="chúc-mọt-người-một-tuần-mới-vui-vẻ-và-may-mắn">Chúc mọt người một tuần mới vui vẻ và may mắn!</h4>
+
+<h4 id="good-bye-peaceeeeeeeeeeeee-alt-text-https-media-giphy-com-media-2wgznjxgrq1vw-giphy-gif">Good bye! Peaceeeeeeeeeeeee!!!!😇😇😇<img src="https://media.giphy.com/media/2WgznJxgRq1vW/giphy.gif" alt="Alt text" /></h4>
+
+    </div>
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+        <div class="pagination__buttons">
+          
+          
+            <span class="button next">
+              <a href="https://biendinh199x.github.io/blog/post/postpage2_infome/">
+                <span class="button__text">Tại sao là blog này?</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+    
+
+    </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">Create at BumbleBee🐝</div>
+    
+  </div>
+</footer>
+
+<script src="https://biendinh199x.github.io/blog/assets/main.js"></script>
+<script src="https://biendinh199x.github.io/blog/assets/prism.js"></script>
+
+  
+</div>
+
+</body>
+</html>

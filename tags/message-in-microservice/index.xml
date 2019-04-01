@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Message in Microservice on Hello Friend!</title>
+    <link>https://biendinh199x.github.io/blog/tags/message-in-microservice/</link>
+    <description>Recent content in Message in Microservice on Hello Friend!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Create at BumbleBee🐝</copyright>
+    <lastBuildDate>Sat, 30 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://biendinh199x.github.io/blog/tags/message-in-microservice/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Look Back on Week - Microservice và phương thức Message bằng RabbitMq có gì hay?</title>
+      <link>https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/</guid>
+      <description>Trong sê ri Look Back on Week, kì này nói về một cấu trúc dịch vụ giúp phát triển phần mềm phức tạp - xây dựng ứng dụng theo dạng Microservice!
+Bài này sẽ là một cái nhìn lại, trong tuần vừa qua, tìm hiểu để sử dụng nó trong phát triển ứng dụng.
+Hi vọng bài này giúp giải thích một phần tại sao nên sử dụng kiến trúc Microservice và việc giao tiếp giữa các Microservice sử dụng gửi message dùng RabbitMq!</description>
+    </item>
+    
+  </channel>
+</rss>

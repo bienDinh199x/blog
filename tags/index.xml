@@ -24,7 +24,7 @@
     <item>
       <title>Development</title>
       <link>https://biendinh199x.github.io/blog/tags/development/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://biendinh199x.github.io/blog/tags/development/</guid>
       <description></description>
@@ -54,6 +54,33 @@
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://biendinh199x.github.io/blog/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://biendinh199x.github.io/blog/tags/java/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Message in Microservice</title>
+      <link>https://biendinh199x.github.io/blog/tags/message-in-microservice/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/message-in-microservice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rabbitmq</title>
+      <link>https://biendinh199x.github.io/blog/tags/rabbitmq/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/rabbitmq/</guid>
       <description></description>
     </item>
     
