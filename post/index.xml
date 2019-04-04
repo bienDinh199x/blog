@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
-    <lastBuildDate>Sat, 30 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://biendinh199x.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Phương pháp học tiếng anh</title>
+      <link>https://biendinh199x.github.io/blog/post/postpage4_hoc_tieng_anh/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/post/postpage4_hoc_tieng_anh/</guid>
+      <description>Bài note này mình tổng hợp lại toàn bộ các phương pháp và tài liệu mình đã chia sẻ từ trước tới nay cho việc tự học tiếng Anh. Vì rất chi tiết, nên các bạn lưu lại để dùng khi cần nhé.
+Chào các bạn. Mình là dân khối A, lên Đại học tiếng Anh coi như con số O tròn trĩnh. Mình hiểu tâm lý các bạn sau nhiều năm học “có môn tiếng Anh” ở trường nhưng cảm giác như không biết gì, lúc nào cũng băn khoăn phải bắt đầu từ đâu, phải học cái gì.</description>
+    </item>
     
     <item>
       <title>Look Back on Week - Microservice và phương thức Message bằng RabbitMq có gì hay?</title>

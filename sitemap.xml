@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://biendinh199x.github.io/blog/post/postpage4_hoc_tieng_anh/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/</loc>
     <lastmod>2019-03-30T00:00:00+00:00</lastmod>
   </url>
@@ -91,6 +96,12 @@
   </url>
   
   <url>
+    <loc>https://biendinh199x.github.io/blog/tags/english/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://biendinh199x.github.io/blog/tags/go/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -116,7 +127,7 @@
   
   <url>
     <loc>https://biendinh199x.github.io/blog/</loc>
-    <lastmod>2019-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -129,6 +140,12 @@
   <url>
     <loc>https://biendinh199x.github.io/blog/categories/hugo/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/tags/h%E1%BB%8Dc-t%E1%BA%ADp/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -152,7 +169,7 @@
   
   <url>
     <loc>https://biendinh199x.github.io/blog/post/</loc>
-    <lastmod>2019-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
