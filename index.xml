@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Look Back on Week - Hiện Thị Sự Kiện User &#39;Is Writing...&#39; Or &#39;Typing...&#39; Trong Ứng Dụng Chat Với FireBase...</title>
+      <link>https://biendinh199x.github.io/blog/post/postpage8_event_typing/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/post/postpage8_event_typing/</guid>
+      <description>Có nhiều bạn vẫn đang thắc mắc hoặc đang đi tìm giải pháp &amp;laquo;is writing..&amp;raquo; or &amp;laquo;typing&amp;raquo; khi làm chat (conversations). Và bài này mình sẽ giới thiệu một cách trong nhiều cách, nhưng mình thấy cách này tương đối ngon nên mạo muội chia sẻ đến cho các bạn&amp;hellip;
+Lưu ý mình chỉ giới thiệu cho các bạn nào đang xài FireBase nhé, còn Socket.io thì mình sẽ có bài tiếp theo nếu bạn nào đang sử dụng Socket để làm chat.</description>
+    </item>
+    
+    <item>
       <title>Developer Life</title>
       <link>https://biendinh199x.github.io/blog/post/postpage6_timeline/</link>
       <pubDate>Thu, 11 Apr 2019 00:00:00 +0000</pubDate>
