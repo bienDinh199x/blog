@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
-    <lastBuildDate>Tue, 16 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://biendinh199x.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TÌM HIỂU VỀ ELK STACK – CÔNG CỤ QUẢN LÝ LOG TẬP CHUNG!</title>
+      <link>https://biendinh199x.github.io/blog/post/postpage9_elk_stack_ql_log/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/post/postpage9_elk_stack_ql_log/</guid>
+      <description>Log (Logging) là gì? Hiểu đơn giản chính là một quấn nhật kí hàng ngày của một hệ thống. Log ghi lại toàn bộ quá trình chạy, giúp dev có thể tìm ra nguyên nhân để khắc phục lỗi mà dev gắn thêm service log vào server để theo dõi CPU và Ram của hệ thống. Khi hệ thống đang chạy, chúng ta không thể debug để tìm lỗi đuợc.</description>
+    </item>
     
     <item>
       <title>Kinh nghiệm du lịch Hội An 2019 với 22 USD</title>

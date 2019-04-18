@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>TÌM HIỂU VỀ ELK STACK – CÔNG CỤ QUẢN LÝ LOG TẬP CHUNG! :: Hello Friend! — I am Bee!</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Log (Logging) là gì? Hiểu đơn giản chính là một quấn nhật kí hàng ngày của một hệ thống. Log ghi lại toàn bộ quá trình chạy, giúp dev có thể tìm ra nguyên nhân để khắc phục lỗi mà dev gắn thêm service log vào server để theo dõi CPU và Ram của hệ thống. Khi hệ thống đang chạy, chúng ta không thể debug để tìm lỗi đuợc."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://biendinh199x.github.io/blog/post/postpage9_elk_stack_ql_log/" />
+
+
+<link rel="stylesheet" href="https://biendinh199x.github.io/blog/assets/style.css">
+
+
+<link rel="stylesheet" href="https://biendinh199x.github.io/blog/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://biendinh199x.github.io/blog/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="https://biendinh199x.github.io/blog/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="TÌM HIỂU VỀ ELK STACK – CÔNG CỤ QUẢN LÝ LOG TẬP CHUNG! :: Hello Friend! — I am Bee!" />
+<meta name="twitter:description" content="Log (Logging) là gì? Hiểu đơn giản chính là một quấn nhật kí hàng ngày của một hệ thống. Log ghi lại toàn bộ quá trình chạy, giúp dev có thể tìm ra nguyên nhân để khắc phục lỗi mà dev gắn thêm service log vào server để theo dõi CPU và Ram của hệ thống. Khi hệ thống đang chạy, chúng ta không thể debug để tìm lỗi đuợc." />
+<meta name="twitter:site" content="https://biendinh199x.github.io/blog/" />
+<meta name="twitter:creator" content="map[name: Bee]" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="TÌM HIỂU VỀ ELK STACK – CÔNG CỤ QUẢN LÝ LOG TẬP CHUNG! :: Hello Friend! — I am Bee!">
+<meta property="og:description" content="Log (Logging) là gì? Hiểu đơn giản chính là một quấn nhật kí hàng ngày của một hệ thống. Log ghi lại toàn bộ quá trình chạy, giúp dev có thể tìm ra nguyên nhân để khắc phục lỗi mà dev gắn thêm service log vào server để theo dõi CPU và Ram của hệ thống. Khi hệ thống đang chạy, chúng ta không thể debug để tìm lỗi đuợc." />
+<meta property="og:url" content="https://biendinh199x.github.io/blog/post/postpage9_elk_stack_ql_log/" />
+<meta property="og:site_name" content="TÌM HIỂU VỀ ELK STACK – CÔNG CỤ QUẢN LÝ LOG TẬP CHUNG!" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2019-04-18 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+</head>
+<body class="">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="https://biendinh199x.github.io/blog/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">hello friend! i am bee!</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://biendinh199x.github.io/blog/about/">About</a></li>
+        
+      
+        
+          <li><a href="https://biendinh199x.github.io/blog/showcase/">Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://biendinh199x.github.io/blog/about/">About</a></li>
+      
+    
+      
+        <li><a href="https://biendinh199x.github.io/blog/showcase/">Showcase</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-137251679-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+ 
+</header>
+
+
+  <div class="content">
+    
+  <div class="post">
+    <h2 class="post-title"><a href="https://biendinh199x.github.io/blog/post/postpage9_elk_stack_ql_log/">TÌM HIỂU VỀ ELK STACK – CÔNG CỤ QUẢN LÝ LOG TẬP CHUNG!</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2019-04-18
+        </span>
+      
+      <span class="post-author">— Written by map[name: Bee]</span>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://biendinh199x.github.io/blog/tags/logs">Logs</a>&nbsp;
+        
+          #<a href="https://biendinh199x.github.io/blog/tags/development">development</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      
+
+<h3 id="log-logging-là-gì">Log (Logging) là gì?</h3>
+
+<p>Hiểu đơn giản chính là một quấn nhật kí hàng ngày của một hệ thống. Log ghi lại toàn bộ quá trình chạy, giúp dev có thể tìm ra nguyên nhân để khắc phục lỗi mà dev gắn thêm service log vào server để theo dõi CPU và Ram của hệ thống. Khi hệ thống đang chạy, chúng ta không thể debug để tìm lỗi đuợc. Nhờ có logging, ta biết đuợc hệ thống chạy ra sao, dùng bao nhiêu tài nguyên, có những lỗi gì đã xảy ra trong quá khứ.</p>
+
+<p><img src="https://o7planning.org/vi/10151/cache/images/i/10439.png" alt="ELK" /></p>
+
+<p>Khi hệ thống có vấn đề, log là thứ chúng ta xem đầu tiên. Nhờ có log ta mới có thể biết chuyện gì đã xảy ra, tìm huớng giải quyết. Log giúp bạn có đầy đủ thông tin về hệ thống :</p>
+
+<pre><code>* Phải có thời gian log đuợc ghi
+* Log phải đi kèm với level: info, warn, error
+* Phải có format cụ thể để sau này ta parse và xử lý dự liệu từ log.
+* Phải ghi log vào file để dễ xem lại, khi file lớn quá thì phải xoá bớt.
+* Không gây ảnh huởng nhiều đến performance, không làm chậm hệ thống.
+* Phải cho phép config, cài đặt thông qua code, qua file XML hoặc JSON.
+</code></pre>
+
+<p>Hôm nay, mình sẽ giới thiệu về ELK Stack, một trong các stack mạnh mẽ, phổ biến nhất dùng để ghi log nhé!</p>
+
+<p>Rất nhiều hệ thống lớn trên thế giới (LinkedIn, Netflix, Medium) đều sử dụng stack này đấy!</p>
+
+<p><img src="https://media.giphy.com/media/l1LbXLcLdGJ4KM0EM/giphy.gif" alt="ELK" /></p>
+
+<h3 id="elk-stack-là-gì">ELK Stack là gì?</h3>
+
+<h4 id="stack-hay-còn-gọi-là-technical-stack-là-khỉ-gì">Stack hay còn gọi là Technical Stack là khỉ gì?</h4>
+
+<p>Để làm ra một ứng dụng hoàn chỉnh, chỉ viết code không thôi là không đủ. Khi cần lưu trữ thông tin, ta phải đưa chúng vào cơ sở dữ liệu. Sau khi đã hoàn thành phần code, ta phải tìm cách deploy nó, tức là đưa code lên một chỗ nào đó để chạy code.</p>
+
+<p>Một chương trình hoàn thiện không chỉ có code, mà còn phải có nền tảng hệ điều hành và những phần mềm đi kèm (web server, cơ sở dữ liệu). Người ta gom những thứ này lại với nhau (giống như ráp Lego ấy), tạo thành technical stack.</p>
+
+<p>Technical Stack, còn gọi là solution stack, là một tập hợp những phần mềm/công nghệ phối hợp chung với nhau, tạo thành một nền tảng để ứng dụng có thể hoạt động được.</p>
+
+<h4 id="cấu-tạo-của-stack-ra-sao">Cấu tạo của Stack ra sao?</h4>
+
+<p>Một stack thường được cấu tạo bởi các thành phần:</p>
+
+<ul>
+<li>Hệ điều hành<br /></li>
+<li>Web Server<br /></li>
+<li>Database Server<br /></li>
+<li>Back-end Programming Language<br />
+<br /></li>
+</ul>
+
+<p>Giả sử với LAMP Stack, các thành phần này sẽ lần lượt là:</p>
+
+<ul>
+<li>Linux<br /></li>
+<li>Apache<br /></li>
+<li>MySQL hoặc  MariaDB<br /></li>
+<li>PHP hoặc Python<br />
+<br /></li>
+</ul>
+
+<p>Mỗi thành phần trong stack đảm nhận một nhiệm vụ riêng biệt.</p>
+
+<p><img src="https://toidicodedao.files.wordpress.com/2017/05/software-stack-reworked.png" alt="ELK" /><em>Đây là cách các thành phần trong stack hoạt động</em></p>
+
+<p>Giả sử với LAMP stack, máy chủ sẽ chạy hệ điều hành Linux, cài server Apache Tomcat. Khi có request từ người dùng, server sẽ gọi code PHP, code này đọc dữ liệu từ cơ sở dữ liệu MySQL, render ra HTML về phía người dùng.</p>
+
+<p>Thông thường, với các host trên mạng (somee, hawkhost, digital ocean) họ cung cấp sẵn toàn bộ stack (os, web server và database), các bạn chỉ việc up code lên và chạy thôi.</p>
+
+<p>Nếu muốn tìm hiểu cách stack hoạt động, các bạn hãy thử kiếm một con VPS chạy Linux, sau đó tự cài đặt các phần mềm cần thiết. Thú vị lắm đấy 😄.</p>
+
+<h4 id="okei-cũng-khá-miên-man-vào-vấn-đề-chính-nhỉ">Okei ! Cũng khá miên man! Vào vấn đề chính nhỉ!</h4>
+
+<p>ELK Stack là tập hợp 3 phần mềm đi chung với nhau, phục vụ cho công việc logging. Ba phần mềm này lần lượt là:</p>
+
+<p>Elasticsearch: Cơ sở dữ liệu để lưu trữ, tìm kiếm và query log<br />
+Logstash: Tiếp nhận log từ nhiều nguồn, sau đó xử lý log và ghi dữ liệu và Elasticsearch<br />
+Kibana: Giao diện để quản lý, thống kê log. Đọc thông tin từ Elasticsearch<br />
+Cơ chế hoạt động của ELK Stack cũng khá đơn giản, các bạn xem hình sẽ hiểu:<br />
+<img src="https://toidicodedao.files.wordpress.com/2018/02/12.png" alt="ELK" /><em>ELK Stack</em></p>
+
+<ol>
+<li>Đầu tiên, log sẽ được đưa đến Logstash. (Thông qua nhiều con đường, ví dụ như server gửi UDP request chứa log tới URL của Logstash, hoặc Beat đọc file log và gửi lên Logstash)<br /></li>
+<li>Logstash sẽ đọc những log này, thêm những thông tin như thời gian, IP, parse dữ liệu từ log (server nào, độ nghiêm trọng, nội dung log) ra, sau đó ghi xuống database là Elasticsearch.<br /></li>
+<li>Khi muốn xem log, người dùng vào URL của Kibana. Kibana sẽ đọc thông tin log trong Elasticsearch, hiển thị lên giao diện cho người dùng query và xử lý.<br />
+<img src="https://toidicodedao.files.wordpress.com/2018/02/kibana-log.gif" alt="ELK" /><em>ELK Stack làm việc</em><br />
+<br /></li>
+</ol>
+
+<h3 id="tại-sao-phải-dùng-elk-stack">Tại sao phải dùng ELK Stack?</h3>
+
+<p>Với các hệ thống hoặc ứng dụng nhỏ, ta không cần sử dụng ELK stack làm gì! Cứ dùng thư viện ghi log đi kèm với ngôn ngữ, sau đó ghi log ra file rồi đọc thôi!</p>
+
+<p>Tuy nhiên, với những hệ thống lớn nhiều người dùng, có nhiều service phân tán (microservice), có nhiều server chạy cùng lúc… thì việc ghi log xuống file không còn hiệu quả nữa.</p>
+
+<p>Giả sử bạn có 10 con server chạy cùng lúc, bạn sẽ phải lục tung 10 con server này để đọc và tìm file log, cực quá phải không nào? Lúc này, người ta bắt đầu áp dụng centralized logging, tức ghi log tập trung vào 1 chỗ.</p>
+
+<h3 id="elk-stack-ư">ELK Stack ư? 👍🏻</h3>
+
+<p>Vì đâu mà mà ELK Stack lại vô cùng mạnh mẽ, tiện dùng, được nhiều công ty sử dụng như vậy? Vì các lý do sau:</p>
+
+<ul>
+<li>Đọc log từ nhiều nguồn: Logstash có thể đọc được log từ rất nhiều nguồn, từ log file cho đến log database cho đến UDP hay REST request.<br /></li>
+<li>Dễ tích hợp: Dù bạn có dùng Nginx hay Apache, dùng MSSQL, MongoDB hay Redis, Logstash đều có thể đọc hiểu và xử lý log của bạn nên việc tích hợp rất dễ dàng.<br /></li>
+<li>Hoàn toàn free: Chỉ cần tải về, setup và dùng, không tốn một đồng nào cả. Công ty tạo ra ELK Stack kiếm tiền bằng các dịch vụ cloud hoặc các sản phẩm premium phụ thêm.<br /></li>
+<li>Khả năng scale tốt: Logstash và Elasticsearch chạy trên nhiều node nên hệ thống ELK cực kì dễ scale. Khi có thêm service, thêm người dùng, muốn log nhiều hơn, bạn chỉ việc thêm node cho Logstash và Elasticsearch là xong.<br /></li>
+<li>Search và filter mạnh mẽ: Elasticsearch cho phép lưu trữ thông tin kiểu NoSQL, hỗ trợ luôn Full-Text Search nên việc query rất dễ dàng và mạnh mẽ.<br />
+Cộng đồng mạnh, tutorial nhiều: Nhiều công ty dùng nên dĩ nhiên là có nhiều tutorial để học và dùng ELK Stack rồi.<br />
+<br /></li>
+</ul>
+
+<h3 id="ứng-dụng-ra-sao">Ứng dụng ra sao?</h3>
+
+<p>Trước đây, hệ thống của bên mình gặp phải vấn đề về logging:</p>
+
+<ul>
+<li>Hệ thống back-end xây dựng theo mô hình <strong><a href="https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/">microservice</a></strong>. Mình cũng đã có một bài viết về microservice, các bạn đọc qua ở <strong><a href="https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/">microservice</a></strong>. Mỗi <strong><a href="https://biendinh199x.github.io/blog/post/postpage3_finish_week_1/">microservice</a></strong> được deploy thành một AppService trên Azure. Mỗi khi service có vấn đề, cần đọc log thì phải vào Azure, tìm service đó, tìm trong folder deploy để tìm file log.<br /></li>
+<li>Một app Desktop khác do mình viết bằng Electron, cần chạy trên 100 máy ảo của khoảng 100 users. Mỗi khi app có vấn đề gì thì phải login vào máy ảo đó và tìm file log.<br /></li>
+
+<li><p>Khi cần tìm và fix bug, ta cần phải mò và đọc file log để “điều tra” xem lỗi nằm ở đâu.<br />
+Do vậy, bên mình quyết định sử dụng ELK Stack để chứa toàn bộ log của hệ thống. Việc tích hợp đơn giản tới không ngờ, chỉ mất khoảng 1 ngày:</p></li>
+
+<li><p>Thay vì kiếm server và cài đặt ELK Stack, CTO quyết định dùng service của logit.io. Thằng này host sẵn ELK Stack trên cloud, khỏi cần mình tốn công quản lý.</p></li>
+
+<li><p>Mình config Logstash cho phép ghi log thông qua giao thức UDP.</p></li>
+
+<li><p>Các service phía back-end đã dùng log4net sẵn, do vậy mình không cần sửa code nhiều, chỉ config cho log4net ghi thêm log qua giao thức UDP, gửi tới logstash là được.</p></li>
+
+<li><p>App Desktop của mình thì sửa lại một chút, lúc ghi log thì ghi xuống cả file lẫn gửi log theo giao thức UDP.</p></li>
+</ul>
+
+<p>Sau một ngày hì hục, team mình đã có một hệ thống centralized logging với ELK Stack. Chỉ cần truy cập vào Kibana là có thể biết hệ thống đang hoạt động như thế nào.<br />
+<img src="https://pbs.twimg.com/media/DRba8eAXUAMLFlO.jpg" alt="ELK" /><em>Nhìn chất như nước cất</em> 😎</p>
+
+<p>Khi có vấn đề, thay vì lục file log, mình chỉ cần dùng Kibana để lọc ra những log trong khoảng thời gian đó, sau đó filter tí là ra, tiết kiệm được rất nhiều thời gian!</p>
+
+<h3 id="mình-mới-tiềm-hiểu-và-cũng-chưa-làm-chủ-được-nó-lắm-elk-stack-này-rất-mạnh-lên-sau-khi-làm-chủ-được-các-tính-năng-mình-sẽ-viết-1-bài-khác-cho-các-bạn">Mình mới tiềm hiểu và cũng chưa làm chủ được nó lắm. ELK stack này rất mạnh lên sau khi làm chủ được các tính năng mình sẽ viết 1 bài khác cho các bạn!</h3>
+
+<h3 id="thân-ái-peaceee">Thân ái!!! Peaceee!!!!!!!!😎</h3>
+
+<p><img src="https://media.giphy.com/media/l3V0gpbjA6fD7ym9W/giphy.gif" alt="ELK" /></p>
+
+    </div>
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+        
+        <div class="pagination__buttons">
+          
+          
+            <span class="button next">
+              <a href="https://biendinh199x.github.io/blog/post/postpage7_travel_hoian/">
+                <span class="button__text">Kinh nghiệm du lịch Hội An 2019 với 22 USD</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+    <div class="comment">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "blog-bee" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "https://biendinh199x.github.io/blog/")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'blog-bee';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+  
+    </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">Create at BumbleBee🐝</div>
+    
+  </div>
+</footer>
+
+<script src="https://biendinh199x.github.io/blog/assets/main.js"></script>
+<script src="https://biendinh199x.github.io/blog/assets/prism.js"></script>
+
+  
+</div>
+
+</body>
+</html>
