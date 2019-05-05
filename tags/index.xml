@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
-    <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://biendinh199x.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,18 +15,9 @@
     <item>
       <title>Developer Life</title>
       <link>https://biendinh199x.github.io/blog/tags/developer-life/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://biendinh199x.github.io/blog/tags/developer-life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Travel</title>
-      <link>https://biendinh199x.github.io/blog/tags/travel/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/travel/</guid>
       <description></description>
     </item>
     
@@ -36,6 +27,15 @@
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://biendinh199x.github.io/blog/tags/javascrip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>https://biendinh199x.github.io/blog/tags/travel/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/travel/</guid>
       <description></description>
     </item>
     
