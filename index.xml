@@ -7,32 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
-<<<<<<< HEAD
     <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0000</lastBuildDate>
-=======
-    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
->>>>>>> master
     
 	<atom:link href="https://biendinh199x.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-<<<<<<< HEAD
       <title>Thư gửi em, vợ của anh!</title>
       <link>https://biendinh199x.github.io/blog/post/postpage9_love_storene/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://biendinh199x.github.io/blog/post/postpage9_love_storene/</guid>
-      <description>Gửi em, nguời anh sẽ lấy làm vợ! Em ạ, mấy hôm trước anh tình cờ đọc được lá thư của một cô gái viết cho người chồng tương lai của mình. Và anh chợt nghĩ, tại sao anh lại không thể gửi cho em một bức thư tương tự? Anh đã suy nghĩ suốt bấy nay về những gì anh muốn viết.
+      <description>Gửi em, nguời anh sẽ lấy làm vợ Em ạ, mấy hôm trước anh tình cờ đọc được lá thư của một cô gái viết cho người chồng tương lai của mình. Và anh chợt nghĩ, tại sao anh lại không thể gửi cho em một bức thư tương tự? Anh đã suy nghĩ suốt bấy nay về những gì anh muốn viết.
 Khi anh viết những dòng này, anh đang hình dung về lần đầu tiên ta gặp nhau.</description>
-=======
-      <title>TÌM HIỂU VỀ ELK STACK – CÔNG CỤ QUẢN LÝ LOG TẬP CHUNG!</title>
-      <link>https://biendinh199x.github.io/blog/post/postpage9_elk_stack_ql_log/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/post/postpage9_elk_stack_ql_log/</guid>
-      <description>Log (Logging) là gì? Hiểu đơn giản chính là một quấn nhật kí hàng ngày của một hệ thống. Log ghi lại toàn bộ quá trình chạy, giúp dev có thể tìm ra nguyên nhân để khắc phục lỗi mà dev gắn thêm service log vào server để theo dõi CPU và Ram của hệ thống. Khi hệ thống đang chạy, chúng ta không thể debug để tìm lỗi đuợc.</description>
->>>>>>> master
     </item>
     
     <item>
