@@ -42,7 +42,7 @@
     <item>
       <title>development</title>
       <link>https://biendinh199x.github.io/blog/tags/development/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://biendinh199x.github.io/blog/tags/development/</guid>
       <description></description>
@@ -121,7 +121,20 @@
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>message in microservice</title>
+=======
+      <title>Logs</title>
+      <link>https://biendinh199x.github.io/blog/tags/logs/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/logs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Message in Microservice</title>
+>>>>>>> master
       <link>https://biendinh199x.github.io/blog/tags/message-in-microservice/</link>
       <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
       
