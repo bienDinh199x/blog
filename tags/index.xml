@@ -7,17 +7,53 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
-    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://biendinh199x.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Chém Gió</title>
-      <link>https://biendinh199x.github.io/blog/tags/ch%C3%A9m-gi%C3%B3/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Developer Life</title>
+      <link>https://biendinh199x.github.io/blog/tags/developer-life/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/blog/tags/ch%C3%A9m-gi%C3%B3/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/developer-life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>https://biendinh199x.github.io/blog/tags/travel/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScrip</title>
+      <link>https://biendinh199x.github.io/blog/tags/javascrip/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/javascrip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://biendinh199x.github.io/blog/tags/development/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>message in typing</title>
+      <link>https://biendinh199x.github.io/blog/tags/message-in-typing/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/message-in-typing/</guid>
       <description></description>
     </item>
     
@@ -31,20 +67,20 @@
     </item>
     
     <item>
-      <title>Developer Life</title>
-      <link>https://biendinh199x.github.io/blog/tags/developer-life/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      <title>MMO</title>
+      <link>https://biendinh199x.github.io/blog/tags/mmo/</link>
+      <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/blog/tags/developer-life/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/mmo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Development</title>
-      <link>https://biendinh199x.github.io/blog/tags/development/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Skill</title>
+      <link>https://biendinh199x.github.io/blog/tags/skill/</link>
+      <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/blog/tags/development/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/skill/</guid>
       <description></description>
     </item>
     
@@ -58,34 +94,7 @@
     </item>
     
     <item>
-      <title>Go</title>
-      <link>https://biendinh199x.github.io/blog/tags/go/</link>
-      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://biendinh199x.github.io/blog/tags/golang/</link>
-      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://biendinh199x.github.io/blog/tags/hugo/</link>
-      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Học Tập</title>
+      <title>Học tập</title>
       <link>https://biendinh199x.github.io/blog/tags/h%E1%BB%8Dc-t%E1%BA%ADp/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -103,43 +112,7 @@
     </item>
     
     <item>
-      <title>Javascrip</title>
-      <link>https://biendinh199x.github.io/blog/tags/javascrip/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/javascrip/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Message in Microservice</title>
-      <link>https://biendinh199x.github.io/blog/tags/message-in-microservice/</link>
-      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/message-in-microservice/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Message in Typing</title>
-      <link>https://biendinh199x.github.io/blog/tags/message-in-typing/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/message-in-typing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mmo</title>
-      <link>https://biendinh199x.github.io/blog/tags/mmo/</link>
-      <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/mmo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rabbitmq</title>
+      <title>RabbitMq</title>
       <link>https://biendinh199x.github.io/blog/tags/rabbitmq/</link>
       <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
       
@@ -148,16 +121,52 @@
     </item>
     
     <item>
-      <title>Skill</title>
-      <link>https://biendinh199x.github.io/blog/tags/skill/</link>
-      <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
+      <title>message in microservice</title>
+      <link>https://biendinh199x.github.io/blog/tags/message-in-microservice/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://biendinh199x.github.io/blog/tags/skill/</guid>
+      <guid>https://biendinh199x.github.io/blog/tags/message-in-microservice/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Templates</title>
+      <title>chém gió</title>
+      <link>https://biendinh199x.github.io/blog/tags/ch%C3%A9m-gi%C3%B3/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/ch%C3%A9m-gi%C3%B3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://biendinh199x.github.io/blog/tags/go/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://biendinh199x.github.io/blog/tags/golang/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://biendinh199x.github.io/blog/tags/hugo/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>templates</title>
       <link>https://biendinh199x.github.io/blog/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
@@ -166,20 +175,11 @@
     </item>
     
     <item>
-      <title>Themes</title>
+      <title>themes</title>
       <link>https://biendinh199x.github.io/blog/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://biendinh199x.github.io/blog/tags/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Travel</title>
-      <link>https://biendinh199x.github.io/blog/tags/travel/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://biendinh199x.github.io/blog/tags/travel/</guid>
       <description></description>
     </item>
     

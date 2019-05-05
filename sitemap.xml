@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://biendinh199x.github.io/blog/post/postpage9_love_storene/</loc>
+    <lastmod>2019-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://biendinh199x.github.io/blog/post/postpage7_travel_hoian/</loc>
     <lastmod>2019-04-16T00:00:00+00:00</lastmod>
   </url>
@@ -53,64 +58,37 @@
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/about/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/showcase/</loc>
-    <lastmod>2019-01-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/posts/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/posts/creatpage/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/posts/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/posts/introduction-aux-modeles-hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/posts/migrer-vers-hugo-depuis-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/post/hello/</loc>
-    <lastmod>1986-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/tags/ch%C3%A9m-gi%C3%B3/</loc>
-    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/tags/developer/</loc>
-    <lastmod>2019-04-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://biendinh199x.github.io/blog/tags/developer-life/</loc>
+    <lastmod>2019-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/</loc>
+    <lastmod>2019-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/post/</loc>
+    <lastmod>2019-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/tags/</loc>
+    <lastmod>2019-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/tags/travel/</loc>
+    <lastmod>2019-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/tags/javascrip/</loc>
     <lastmod>2019-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -122,56 +100,32 @@
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/tags/message-in-typing/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/tags/developer/</loc>
+    <lastmod>2019-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/tags/mmo/</loc>
+    <lastmod>2019-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/tags/skill/</loc>
+    <lastmod>2019-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://biendinh199x.github.io/blog/tags/english/</loc>
     <lastmod>2019-04-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/tags/go/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/categories/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/tags/golang/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/</loc>
-    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/tags/hugo/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/categories/hugo/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -188,14 +142,8 @@
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/tags/javascrip/</loc>
-    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/categories/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/tags/rabbitmq/</loc>
+    <lastmod>2019-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -206,21 +154,37 @@
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/tags/message-in-typing/</loc>
-    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/tags/ch%C3%A9m-gi%C3%B3/</loc>
+    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/tags/mmo/</loc>
-    <lastmod>2019-04-09T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/tags/go/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/post/</loc>
-    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/tags/golang/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/tags/hugo/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/about/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/showcase/</loc>
+    <lastmod>2019-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -230,20 +194,46 @@
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/tags/rabbitmq/</loc>
-    <lastmod>2019-03-30T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/posts/goisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/categories/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/tags/skill/</loc>
-    <lastmod>2019-04-09T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/categories/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/tags/</loc>
-    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/posts/creatpage/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/posts/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/categories/go/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/posts/introduction-aux-modeles-hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -260,9 +250,25 @@
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/tags/travel/</loc>
-    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <loc>https://biendinh199x.github.io/blog/categories/hugo/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/categories/jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/posts/migrer-vers-hugo-depuis-jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/post/hello/</loc>
+    <lastmod>1986-09-17T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
