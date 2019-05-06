@@ -7,7 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://biendinh199x.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,7 +30,7 @@
     </item>
     
     <item>
-      <title>golang</title>
+      <title>Golang</title>
       <link>https://biendinh199x.github.io/blog/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       

@@ -186,7 +186,7 @@ if (!doNotTrack) {
     // su kien moi nguoi khi chat se hien thi o day
     ref.on('value', function(snapshot) {
     users.innerText = '';
-
+    
     snapshot.forEach(function(typer) {
         var li = document.createElement('li');
         li.innerText = typer.key() + ': is writing...' ;
@@ -201,7 +201,7 @@ if (!doNotTrack) {
   
   // KHi user bat dau chat thi se set gia tri cho User nay
   ref.child(uid).set(true);
-  // xoa su kien sau khi timer bat dau
+  // xoa su kien sau khi timer bat dau 
   if (timer) clearTimeout(timer);
   // remove user nay trong vong 1 second
   timer = setTimeout(function() {
