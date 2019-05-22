@@ -13,9 +13,19 @@
     
     
     <item>
+      <title>Python và những người bạn! - part 2</title>
+      <link>https://biendinh199x.github.io/blog/post/postpage12_python_envoiment/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://biendinh199x.github.io/blog/post/postpage12_python_envoiment/</guid>
+      <description>Bước đầu tiên là phải cài đặt môi trường đã nhỉ! Trước khi cài đặt Python, bạn cần tải Python từ: https://www.python.org/downloads/. Sau khi đã tải Python về máy, thì việc cài đặt Python cũng giống như cài đặt các phần mềm khác như bộ Visual Studio của Microsoft, bạn cứ nhấn next, next và next.
+Nếu bạn chỉ tải và cài cái này thì có thể biên dịch các python file bằng terminal.</description>
+    </item>
+    
+    <item>
       <title>Python và những người bạn!</title>
       <link>https://biendinh199x.github.io/blog/post/postpage11_python_basic/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://biendinh199x.github.io/blog/post/postpage11_python_basic/</guid>
       <description>Python là gì? Python là một ngôn ngữ lập trình bậc cao, thông dịch, hướng đối tượng, đa mục đích và cũng là một ngôn ngữ lập trình động. Cú pháp của Python là khá dễ dàng để học và ngôn ngữ này cũng mạnh mẽ và linh hoạt không kém các ngôn ngữ khác trong việc phát triển các ứng dụng. Python hỗ trợ mẫu đa lập trình, bao gồm lập trình hướng đối tượng, lập trình hàm và mệnh lệnh hoặc là các phong cách lập trình theo thủ tục.</description>
