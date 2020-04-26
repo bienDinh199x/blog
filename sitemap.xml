@@ -3,18 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/post/postpage12_python_envoiment/</loc>
+    <loc>https://biendinh199x.github.io/blog/post/postpage11_python_envoiment/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/post/postpage11_python_basic/</loc>
+    <loc>https://biendinh199x.github.io/blog/post/postpage10_python_basic/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/post/postpage10_thu_gui_vo/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,7 +18,7 @@
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/post/postpage7_travel_hoian/</loc>
+    <loc>https://biendinh199x.github.io/blog/travel/postpage7_travel_hoian/</loc>
     <lastmod>2019-04-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -103,18 +98,6 @@
   </url>
   
   <url>
-    <loc>https://biendinh199x.github.io/blog/tags/developer-life/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://biendinh199x.github.io/blog/tags/send-my-wife/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://biendinh199x.github.io/blog/tags/logs/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -127,6 +110,12 @@
   </url>
   
   <url>
+    <loc>https://biendinh199x.github.io/blog/tags/developer-life/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://biendinh199x.github.io/blog/tags/javascrip/</loc>
     <lastmod>2019-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -134,6 +123,12 @@
   
   <url>
     <loc>https://biendinh199x.github.io/blog/tags/travel/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://biendinh199x.github.io/blog/travel/</loc>
     <lastmod>2019-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
