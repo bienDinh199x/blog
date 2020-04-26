@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello Friend!</title>
+    <title>hello friend! i am bee!</title>
     <link>https://biendinh199x.github.io/blog/</link>
-    <description>Recent content on Hello Friend!</description>
+    <description>Recent content on hello friend! i am bee!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Create at BumbleBee🐝</copyright>
@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Python và những người bạn! - part 2</title>
+      <title>Học Code Python - part 2</title>
       <link>https://biendinh199x.github.io/blog/post/postpage11_python_envoiment/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
@@ -23,7 +23,7 @@ Nếu bạn chỉ tải và cài cái này thì có thể biên dịch các pyth
     </item>
     
     <item>
-      <title>Python và những người bạn!</title>
+      <title>Học Code Python</title>
       <link>https://biendinh199x.github.io/blog/post/postpage10_python_basic/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
